@@ -1,4 +1,18 @@
-  h1 {
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas:
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . .";
+}
+
+/*  h1 {
   font-size: 300px;
   text-align: center;
 	margin: 0;
@@ -27,4 +41,4 @@ body {
 img {
   display: block;
   margin: 0 auto;
-}
+}*/
