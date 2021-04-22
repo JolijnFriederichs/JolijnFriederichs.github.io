@@ -1,30 +1,32 @@
-var myImage = document.querySelector('img');
+<div class="grid-container"></div>
 
-myImage.onclick = function() {
-    var mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/firefox-icon.png') {
-      myImage.setAttribute ('src','images/HibiscusPreview2.png');
-    } else {
-      myImage.setAttribute ('src','images/firefox-icon.png');
-    }
-}
+/// var myImage = document.querySelector('img');
 
-var myButton = document.querySelector('button');
-var myHeading = document.querySelector('h1');
+// myImage.onclick = function() {
+//     var mySrc = myImage.getAttribute('src');
+//     if(mySrc === 'images/firefox-icon.png') {
+//       myImage.setAttribute ('src','images/HibiscusPreview2.png');
+//     } else {
+//       myImage.setAttribute ('src','images/firefox-icon.png');
+//     }
+// }
 
-function setUserName() {
-  var myName = prompt('Please enter your name.');
-  localStorage.setItem('name', myName);
-  myHeading.textContent = 'Mozilla is cool, ' + myName;
-}
+// var myButton = document.querySelector('button');
+// var myHeading = document.querySelector('h1');
 
-if(!localStorage.getItem('name')) {
-  setUserName();
-} else {
-  var storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Hello Test Test Test, ' + storedName;
-}
+// function setUserName() {
+//   var myName = prompt('Please enter your name.');
+//   localStorage.setItem('name', myName);
+//   myHeading.textContent = 'Mozilla is cool, ' + myName;
+// }
 
-myButton.onclick = function() {
-  setUserName();
-}
+// if(!localStorage.getItem('name')) {
+//   setUserName();
+// } else {
+//   var storedName = localStorage.getItem('name');
+//   myHeading.textContent = 'Hello Test Test Test, ' + storedName;
+// }
+
+// myButton.onclick = function() {
+//   setUserName();
+// }
